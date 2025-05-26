@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3MG Frigo - Kontakt</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Stilizacija kontakt forme */
+    .contact-form {
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form h2 {
+      margin-bottom: 20px;
+    }
+    .form-control:focus {
+      border-color: #0d6efd;
+      box-shadow: none;
+    }
+    .btn-primary {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
+    .btn-primary:hover {
+      background-color: #0b5ed7;
+      border-color: #0a58ca;
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navigacija -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">3MG Frigo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+          <li class="nav-item"><a class="nav-link" href="usluge.html">Usluge</a></li>
+          <li class="nav-item"><a class="nav-link" href="galerija.html">Galerija</a></li>
+          <li class="nav-item"><a class="nav-link active" href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Glavni sadržaj -->
+  <main class="flex-fill">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="contact-form">
+            <h2>Kontaktirajte nas</h2>
+            <form action="mailto:vasemail@example.com" method="POST" enctype="text/plain">
+              <div class="mb-3">
+                <label for="ime" class="form-label">Ime i prezime *</label>
+                <input type="text" class="form-control" id="ime" name="ime" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email adresa *</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="telefon" class="form-label">Broj telefona</label>
+                <input type="tel" class="form-control" id="telefon" name="telefon">
+              </div>
+              <div class="mb-3">
+                <label for="usluga" class="form-label">Izaberite uslugu</label>
+                <select class="form-select" id="usluga" name="usluga">
+                  <option selected disabled>-- Izaberite --</option>
+                  <option value="ugradnja">Ugradnja klima uređaja</option>
+                  <option value="odrzavanje">Održavanje i servis</option>
+                  <option value="ciscenje">Čišćenje klima uređaja</option>
+                  <option value="konsultacije">Konsultacije i savetovanje</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="poruka" class="form-label">Poruka *</label>
+                <textarea class="form-control" id="poruka" name="poruka" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Pošalji</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <div class="container">
+      <p>&copy; 2025 3MG Frigo. Sva prava zadržana.</p>
+      <p>Izradio: Jagos Majstorović</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (opciono, ako koristite Bootstrap JavaScript funkcionalnosti) -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>

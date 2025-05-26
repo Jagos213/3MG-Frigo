@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3MG Frigo - Galerija</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Hover efekat za slike u galeriji */
+    .gallery-img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 8px;
+    }
+    .gallery-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navigacija -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">3MG Frigo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+          <li class="nav-item"><a class="nav-link" href="usluge.html">Usluge</a></li>
+          <li class="nav-item"><a class="nav-link active" href="galerija.html">Galerija</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Glavni sadržaj -->
+  <main class="flex-fill">
+    <div class="container py-5">
+  <h2 class="text-center mb-4">Naši Radovi</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <img src="slike/sl1.jpg" class="img-fluid gallery-img" alt="Instalacija klima uređaja 1" />
+    </div>
+    <div class="col">
+      <img src="slike/sl2.jpg" class="img-fluid gallery-img" alt="Instalacija klima uređaja 2" />
+    </div>
+    <div class="col">
+      <img src="slike/sl3.jpg" class="img-fluid gallery-img" alt="Instalacija klima uređaja 3" />
+    </div>
+    <div class="col">
+      <img src="slike/sl4.jpg" class="img-fluid gallery-img" alt="Instalacija klima uređaja 4" />
+    </div>
+    <div class="col">
+      <img src="slike/sl5.jpg" class="img-fluid gallery-img" alt="Instalacija klima uređaja 5" />
+    </div>
+    <div class="col">
+      <img src="slike/sl6.jpg" class="img-fluid gallery-img" alt="Instalacija klima uređaja 6" />
+    </div>
+  </div>
+</div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <div class="container">
+      <p>&copy; 2025 3MG Frigo. Sva prava zadržana.</p>
+      <p>Izradio: Jagos Majstorović</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (opciono, ako koristite Bootstrap JavaScript funkcionalnosti) -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>
